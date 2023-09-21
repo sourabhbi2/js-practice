@@ -1,2 +1,2 @@
 # js-practice
-Daily JS practice here
+A code repo for daily JS practice.
