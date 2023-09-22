@@ -31,4 +31,4 @@ console.log("a: ", a, "b: ", b) // in postfix increment, returns the value befor
 //prefix increment
 let x = 2n
 let y = ++x
-console.log("X = ", x, "Y = ", y); // it returns the value after incrementing
+console.log("X = ", x, ";" , "Y = ", y); // it returns the value after incrementing
