@@ -5,7 +5,7 @@ emp_City = "Lucknow"
 
 //emp_Id  = 102 //not allowed to re-assigned a value to const variable 
 
-emp_Email = "johnDear@gmaol.com"
+emp_Email = "johnDear@gmail.com"
 emp_Password = 13131313
 emp_City = "Delhi"
 
