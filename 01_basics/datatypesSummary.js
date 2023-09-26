@@ -12,9 +12,9 @@ console.log(typeof another_Id)
 
 //array, object
 
-const heros = [{name:"IronMan",
+const heroes = [{name:"IronMan",
  name2:"Shaktiman", name3:"Naagraj"}]
- console.log(typeof heros);
+ console.log(typeof heroes);
 
 
  //====================================
