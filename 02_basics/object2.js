@@ -36,4 +36,11 @@ console.log(Object.keys(tinderUser)); // returns string
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser)); //Returns an array of key/values of the enumerable properties of an object
 
-console.log(tinderUser.hasOwnProperty('isLoggedOut'))
+console.log(tinderUser.hasOwnProperty('isLoggedOut'));
+
+const course = {
+    courseName: "Basics of JS",
+    price: 1499,
+    courseInstructor: "Hitesh Chaudhary"
+}
+
