@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events demo</title>
+</head>
+<body>
+    <div>
+        <ul id="images">
+            <li style="list-style-type: none;"><img width="200px" id="nature" src="https://images.unsplash.com/photo-1697016869669-010debc1a55d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt=""></li>
+            <li style="list-style-type: none;"><img width="200px" id="animal" src="https://images.unsplash.com/photo-1679204474013-866629dac1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1552&q=80" alt=""></li>
+            <li style="list-style-type: none;"><img width="200px" id="3d" src="https://images.unsplash.com/photo-1697325320142-28beaededbf3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt=""></li>
+            <li style="list-style-type: none;"><img width="200px" id="temple" src="https://images.unsplash.com/photo-1697263021095-1b702c092026?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt=""></li>
+            <li style="list-style-type: none;"><img width="200px" id="artist" src="https://images.unsplash.com/photo-1680783954745-3249be59e527?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt=""></li>
+            <li style="list-style-type: none;"><a id="google" href="https://google.com">Google</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('images').addEventListener('click', (e) =>{
+    //     console.log('clicked inside the ul');
+    // }, false)
+    
+    // document.getElementById('nature').addEventListener('click', (e) =>{
+    //     console.log('nature clicked');
+    //     e.stopPropagation(); // it will stop the bubble event.
+    // }, false) // by default, it will bubble the event to parent element, to stop this, we can use stopPropagation(). 
+    
+    // document.getElementById('google').addEventListener('click', (e) =>{
+        
+    //     e.stopPropagation();
+    //     e.preventDefault();
+    //     console.log('Google clicked');
+    // }, false)
+
+        document.querySelector('#images').addEventListener('click', (e) => {
+            if(e.target.tagName === 'IMG'){
+                let removeIt =  e.target.parentNode;
+                removeIt.parentNode.removeChild(removeIt)
+            }
+           
+        }, false)
+
+</script>
+</html>
