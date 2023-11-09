@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Click me</button>
+    
+</body>
+
+<script>
+
+//Example -1
+
+    class React {
+        constructor(){
+            this.library = 'React';
+            this.server = 'https://localhost:3000';
+
+            document.querySelector('button').addEventListener('click', this.handleClick.bind(this))
+        }
+
+        handleClick(){
+            console.log('button clicked');
+            console.log(this.server);
+        }
+    }
+
+    // const app = new React();
+
+    //Example -2;
+
+    var name = 'Sourabh';
+
+    const user = {
+        name: 'Bittu',
+        getUserName (){
+            return this.name;
+        },
+    };
+// 'this' parameter of 'getUserName' is bound to 'user'.
+    console.log(user.getUserName());
+
+    const accessName = user.getUserName;
+    //'this' parameter of 'accessName' is bound to 'globalthis'.
+    console.log(accessName());
+
+    // created a new function 'bindUserName' to access the 'user' by using 'bind' keyword. 
+    const bindUserName = accessName.bind(user);
+    
+    console.log(bindUserName());
+
+</script>
+
+</html>
